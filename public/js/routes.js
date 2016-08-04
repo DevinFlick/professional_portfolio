@@ -23,6 +23,9 @@
     })
     .when('/contact',{
       templateUrl: 'html/views/contact.html'
+    })
+    .otherwise({
+      redirectTo: '/'
     });
   }
 }());
