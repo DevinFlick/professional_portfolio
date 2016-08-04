@@ -1,3 +1,3 @@
-angular.module('ngPortPage',{
-  'ngRoute'
+var app = angular.module('ngPortPage',{
+  'ngRoutes'
 });

@@ -1,9 +1,10 @@
-app.directive('navbar', function(){
+angular.module('ngPortPage')
+  .directive('navbar', function(){
   return{
     restrict: 'E',
     scope:{
       navbar: '='
     },
-    templateUrl:'../html/navbar.html'
+    templateUrl:'/html/navbar.html'
   };
 });
