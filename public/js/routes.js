@@ -22,10 +22,10 @@
       templateUrl: 'html/views/personal-interests.html'
     })
     .when('/contact',{
-      templateUrl: 'html/views/contact.html'
+      templateUrl: 'html/views/contact.html',
     })
     .otherwise({
-      redirectTo: '/'
+      redirectTo: '/',
     });
   }
 }());
