@@ -1,0 +1,25 @@
+body{
+  background-image: url('../images/DTGainesville1024x685.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}
+.img-circle-size{
+  height: 500px;
+}
+.navpad{
+  margin-bottom: 100px;
+}
+.well-styles{
+  background-color: rgba(217, 217, 217, 0.75);
+  color: #1d2731;
+}
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+.row-margin-top{
+  margin-top: 50px;
+}
