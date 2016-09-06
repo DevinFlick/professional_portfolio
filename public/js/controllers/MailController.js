@@ -3,7 +3,7 @@
           .controller('MailController', MailController);
 
   MailController.$inject = ['$scope', '$http'];
-
+  
   function MailController($scope, $http){
     $scope.sendMail = sendMail;
     var baseUrl = 'https://devinflick-portfolio.herokuapp.com/send';

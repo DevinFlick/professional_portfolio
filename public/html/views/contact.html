@@ -1,7 +1,9 @@
 <div class="container">
   <div class="form-group" ng-controller="MailController" ng-hide="sentMail">
     <div class="row">
-      <h2>Feel free to contact me about freelancing and employment opportunities using the form below.</h2>
+      <h2>
+        Feel free to contact me about freelancing and employment opportunities using the form below.
+      </h2>
     </div>
     <div class="row">
       <input type="text" class='form-control' placeholder="Your Name" ng-model="msg.name">
@@ -17,6 +19,8 @@
     </div>
   </div>
   <div ng-show='sentMail' ng-hide='!sentMail'>
-    <h1>Thank you for contacting me! I will be getting back to you within a couple of days!</h1>
+    <h1>
+      Thank you for contacting me! I will be getting back to you within a couple of days!
+    </h1>
   </div>
 </div>
