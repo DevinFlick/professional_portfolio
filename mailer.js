@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var apiKey = process.env.API || require('./config').apiKey;
+var apiKey = process.env.APIKEY || require('./config').apiKey;
 var domain = 'sandbox5c2f351884df485a972d799ccf3fffc9.mailgun.org';
 var mailgun = require('mailgun-js')({apiKey: apiKey, domain: domain});
 
