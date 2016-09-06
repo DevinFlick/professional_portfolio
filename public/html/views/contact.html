@@ -1,25 +1,29 @@
-<div class="container" ng-controller="MailController">
-  <div class="form-group" ng-hide="sentMail">
+<div class="container projects-margin" ng-controller="MailController">
+  <div class="form-group col-md-8 col-md-offset-2" ng-hide="sentMail">
     <div class="row">
-      <h2>
+      <h2 class="jumbotron well-styles">
         Feel free to contact me about freelancing and employment opportunities using the form below.
       </h2>
     </div>
     <div class="row">
-      <input type="text" class='form-control' placeholder="Your Name" ng-model="msg.name">
+      <div class="col-md-5">
+        <input type="text" class='form-control' placeholder="Your Name" ng-model="msg.name">
+      </div>
+      <div class="col-md-5 col-md-offset-2">
+        <input type="email" class="form-control" placeholder="YourValid@email.com" ng-model="msg.email">
+      </div>
     </div>
-    <div class="row">
-      <input type="text" class="form-control" placeholder="YourValid@email.com" ng-model="msg.email">
+    <div class="row c-row-margin-top">
+      <div class="col-md-12">
+        <textarea class="form-control" rows="8" placeholder="Your Message" ng-model="msg.text"></textarea>
+      </div>
     </div>
-    <div class="row">
-      <textarea class="form-control" rows="8" placeholder="Your Message" ng-model="msg.text"></textarea>
-    </div>
-    <div class="col-md-4 col-md-offset-4">
+    <div class="col-md-4 col-md-offset-4 c-row-margin-top">
       <button class="btn btn-success btn-block" ng-click="sendMail(msg); sentMail = true">Reach out to Devin!</button>
     </div>
   </div>
   <div ng-show='sentMail' >
-    <h1>
+    <h1 class="jumbotron well-styles">
       Thank you for contacting me! I will be getting back to you within a couple of days!
     </h1>
   </div>
