@@ -7,13 +7,13 @@
       <input type="text" class='form-control' placeholder="Your Name" ng-model="msg.name">
     </div>
     <div class="row">
-      <input type="text" class="form-control" placeholder="Email" ng-model="msg.email">
+      <input type="text" class="form-control" placeholder="YourValid@email.com" ng-model="msg.email">
     </div>
     <div class="row">
       <textarea class="form-control" rows="8" placeholder="Your Message" ng-model="msg.text"></textarea>
     </div>
     <div class="col-md-4 col-md-offset-4">
-      <button class="btn btn-success btn-block" ng-click="sendMail(msg)" ng-model="sentMail">Reach out to Devin!</button>
+      <button class="btn btn-success btn-block" ng-click="sendMail(msg); sentMail = true">Reach out to Devin!</button>
     </div>
   </div>
   <div ng-show='sentMail'>
