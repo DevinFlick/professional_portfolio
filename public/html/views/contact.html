@@ -16,7 +16,7 @@
       <button class="btn btn-success btn-block" ng-click="sendMail(msg); sentMail = true">Reach out to Devin!</button>
     </div>
   </div>
-  <div ng-show='sentMail'>
+  <div ng-show='sentMail' ng-hide='!sentMail'>
     <h1>Thank you for contacting me! I will be getting back to you within a couple of days!</h1>
   </div>
 </div>
